@@ -1,78 +1,8 @@
-# Judiciary-Percentage-Target-Achievement-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pendency, Percentage Target & Printing System</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <style>
-    :root {
-      --navy: #082a74;
-      --yellow: #ffef00;
-      --cyan: #20dbe5;
-      --light: #efefef;
-      --white: #ffffff;
-      --black: #000000;
-      --border: #1c1c1c;
-      --danger: #c40000;
-      --shadow: none;
-    }
-
-    * { box-sizing: border-box; }
-    .start-screen {
-  position: fixed;
-  top:0; left:0;
-  width:100%;
-  height:100%;
-  background:#041f5c;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  z-index:9999;
-}
-
-/* ===== PROFESSIONAL JUDICIARY WATERMARK ===== */
-.start-screen::before {
-  content: "⚖";
-  position: absolute;
-  font-size: 320px;
-  color: rgba(255,255,255,0.08);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.start-screen::after {
-  content: "JUDICIARY";
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  font-weight: 900;
-  letter-spacing: 8px;
-  color: rgba(255,255,255,0.06);
-}
-
-.start-content {
-  color:#f5e6a8;
-  font-weight:900;
-  font-size:30px;
-  line-height:1.8;
-}
-
-.start-btn {
-  position:absolute;
-  bottom:30px;
-  right:30px;
-  padding:14px 26px;
-  font-weight:800;
-  background:#f5e6a8;
-  border:none;
-  border-radius:10px;
-  cursor:pointer;
 }
 
     body {
@@ -322,7 +252,7 @@
     .target-text {
       padding: 14px 12px;
       text-align: center;
-      font-size: 14px;
+      font-size: 18px;
       font-family: Arial, Helvetica, sans-serif;
       font-style: italic;
       font-weight: 800;
@@ -497,14 +427,13 @@
 </head>
 <body>
 <div class="start-screen" id="startScreen">
-  <div class="start-content"<br>
-    PERCENTAGE  TARGET  PERFORMA<br>
+  <div class="start-content">
     Prepared by <br>
     Syed Shahab Ud Din <br>
     Junior Clerk <br>
-    Sessions Court, 
-    Battagram
+    Sessions Court, Battagram
   </div>
+
   <button class="start-btn" onclick="startApp()">Start</button>
 </div>
   <div class="app-wrap no-print" id="mainApp" style="display:none;">
@@ -519,7 +448,7 @@
   </div>
 
   <section class="page active editing-wrap" id="editingPage">
-    <div class="edit-title">Fill in Entries here</div>
+    <div class="edit-title">Editing Page</div>
     
     <div style="padding:16px 18px 10px; background:#ffffff; border-bottom:2px solid rgba(0,0,0,0.12);">
       <div style="font-size:18px; font-weight:700; margin-bottom:8px; color:#082a74;">Court Name</div>
